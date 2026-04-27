@@ -5,21 +5,21 @@
 class Fuku < Formula
   desc "Lightweight CLI orchestrator for running and managing multiple local services"
   homepage "https://tab.github.io/fuku/"
-  version "0.19.0"
+  version "0.19.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tab/fuku/releases/download/v0.19.0/fuku_v0.19.0_macos_x86_64.tar.gz"
-      sha256 "bff7b03ce720669da1ef787a2384a6645cabee9ebae2923a3688032b8c80027f"
+      url "https://github.com/tab/fuku/releases/download/v0.19.1/fuku_v0.19.1_macos_x86_64.tar.gz"
+      sha256 "2753fe5392ab4a2b1be0e3b6e4988f7d8f1e15f2504a619950fca3597ba3cf5c"
 
       define_method(:install) do
         bin.install "fuku"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tab/fuku/releases/download/v0.19.0/fuku_v0.19.0_macos_arm64.tar.gz"
-      sha256 "00d5a22bfb58984964e2f1ee39f1b3b569920a91376bcc959fc337922df88bd7"
+      url "https://github.com/tab/fuku/releases/download/v0.19.1/fuku_v0.19.1_macos_arm64.tar.gz"
+      sha256 "0c99235039e5558549903b9354a08150351a88eb927260849ffecb38d9c59e3c"
 
       define_method(:install) do
         bin.install "fuku"
@@ -29,22 +29,22 @@ class Fuku < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tab/fuku/releases/download/v0.19.0/fuku_v0.19.0_linux_x86_64.tar.gz"
-      sha256 "87702cb2e03946672d3510fc7afa0cf5f5c5b8e269847355832f4ddcad1719dc"
+      url "https://github.com/tab/fuku/releases/download/v0.19.1/fuku_v0.19.1_linux_x86_64.tar.gz"
+      sha256 "b96dbe9eed5b0c1c18a813dde25f3b9d3dd6d2dae3eca820b6b175b9060ec3db"
       define_method(:install) do
         bin.install "fuku"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/tab/fuku/releases/download/v0.19.0/fuku_v0.19.0_linux_arm.tar.gz"
-      sha256 "5d56daa28d757ce3d734a4879127ce7d10ce7d300e20a0c6947572ff0d461fb7"
+      url "https://github.com/tab/fuku/releases/download/v0.19.1/fuku_v0.19.1_linux_arm.tar.gz"
+      sha256 "a8cbd92683e94f32d330ae84501a394cb7b189530da6de2e613a9ec7cd2fe239"
       define_method(:install) do
         bin.install "fuku"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tab/fuku/releases/download/v0.19.0/fuku_v0.19.0_linux_arm64.tar.gz"
-      sha256 "afcdcbaa7493716d449cc3bcb99b05a827eca9baefddf13332e0e95dd1837854"
+      url "https://github.com/tab/fuku/releases/download/v0.19.1/fuku_v0.19.1_linux_arm64.tar.gz"
+      sha256 "c7019c79a29f45e928a5113345f890b2da50cad3dd9ce60b63b1ae10dc8617d3"
       define_method(:install) do
         bin.install "fuku"
       end
